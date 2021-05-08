@@ -188,6 +188,13 @@ ___
         2. Indented item
     4. Fourth item
 
+>1. First item
+>2. Second item
+>3. Third item
+>    1. Indented item
+>    2. Indented item
+>4. Fourth item
+
 ### 순서없는 목록
 항목 앞에 대시(-), 별표(*) 또는 더하기 기호(+)를 추가합니다. 중첩된 목록을 만들려면 하나 이상의 항목을 들여 씁니다.
 
@@ -352,3 +359,105 @@ ___
 세 가지 모두의 렌더링된 출력은 동일하게 보입니다.
 
 ___
+
+## 9. 링크
+링크를 만들려면 링크 텍스트를 대괄호로 묶은 다음(예 : [Duck Duck Go]) 바로 뒤에 URL을 괄호로 묶습니다 (예 : (https://duckduckgo.com)). 마크 다운 애플리케이션은 URL 중간에 공백을 처리하는 방법에 동의하지 않습니다. 호환성을 위해 공백대신 %20을 씁니다.
+
+    My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
+
+>My favorite search engine is [Duck Duck Go](https://duckduckgo.com).  
+
+### 제목 추가
+선택적으로 링크 제목을 추가 할 수 있습니다. 사용자가 링크 위로 마우스를 가져 가면 도구 설명(tooltip)으로 표시됩니다. 제목을 추가하려면 괄호 안 URL 뒤에 넣습니다.
+
+    My favorite search engine is [Duck Duck Go](https://duckduckgo.com "The best search engine for privacy").
+
+>My favorite search engine is [Duck Duck Go](https://duckduckgo.com "The best search engine for privacy").
+
+### URL 및 이메일 주소
+URL 또는 이메일 주소를 링크로 빠르게 전환하려면 꺾쇠 괄호로 묶습니다.
+
+    <https://www.markdownguide.org>
+    <fake@example.com>
+
+><https://www.markdownguide.org>  
+><fake@example.com>
+
+### 링크 서식 지정
+링크를 강조하려면 괄호와 괄호 앞뒤에 별표를 추가하십시오. 링크를 코드로 표시하려면 괄호 안에 백틱을 추가하세요.
+
+    I love supporting the **[EFF](https://eff.org)**.
+    This is the *[Markdown Guide](https://www.markdownguide.org)*.
+    See the section on [`code`](#code).
+
+>I love supporting the **[EFF](https://eff.org)**.  
+>This is the *[Markdown Guide](https://www.markdownguide.org)*.  
+>See the section on [`code`](#code).
+
+### 참조 스타일 링크
+참조 스타일 링크는 두 부분으로 구성됩니다. 텍스트를 인라인으로 두는 부분과 텍스트를 쉽게 읽을 수 있도록 파일의 다른 곳에 저장하는 부분입니다.
+
+#### a. 링크의 첫 번째 부분 서식 지정
+참조 스타일 링크의 첫 번째 부분은 두 세트의 대괄호로 이루어집니다. 첫 번째 대괄호 세트에는 링크된 것으로 표시되어야하는 텍스트가 들어갑니다. 두 번째 대괄호 세트는 (문서의 다른 곳에 저장되는 링크를 가리키는) 레이블을 표시합니다.
+
+필수는 아니지만 첫 번째와 두 번째 대괄호 세트 사이에 공백을 포함할 수 있습니다. 두 번째 대괄호 세트의 레이블은 대소 문자를 구분하지 않으며 문자, 숫자, 공백 또는 구두점을 포함 할 수 있습니다.
+
+    [hobbit-hole][1]
+    [hobbit-hole] [1]
+
+#### b. 링크의 두 번째 부분 서식 지정
+참조 스타일 링크의 두 번째 부분은 다음 세 파트로 구성됩니다.
+
+1. 괄호로 묶인 레이블. 바로 뒤에 콜론과 하나 이상의 공백이옵니다(예: [label]: ).
+2. 링크의 URL. 선택적으로 꺾쇠 괄호로 묶을 수 있습니다.
+3. 링크의 선택적 제목. 큰따옴표, 작은따옴표 또는 괄호로 묶습니다.
+
+이 링크의 두 번째 부분은 마크 다운 문서의 아무 곳에나 배치할 수 있습니다. (예: 미주 또는 각주).
+
+    [1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle
+    [1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle 'Hobbit lifestyles'
+    [1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle (Hobbit lifestyles)
+    [1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> 'Hobbit lifestyles'
+    [1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> (Hobbit lifestyles)
+
+___
+
+## 10. 이미지
+
+### 이미지 연결
+이미지에 링크를 추가하려면 이미지의 마크다운을 대괄호로 묶은 다음 링크를 괄호로 추가합니다.
+
+    [![Philadelphia's Magic Gardens. This place was so cool!](philly-magic-garden.jpg "Philadelphia's Magic Gardens")](https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv)
+
+출력 결과는 다음과 같습니다.
+
+[![Philadelphia's Magic Gardens. This place was so cool!](philly-magic-garden.jpg "Philadelphia's Magic Gardens")](https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv)
+___
+
+## 11. 이스케이프 문자
+
+### 이스케이프 할 수 있는 문자
+
+백슬래시를 사용하여 다음 문자를 이스케이프 할 수 있습니다.
+
+    \   백슬래시
+    `   백틱
+    *   별표
+    _   밑줄
+    {}  중괄호
+    []  대괄호
+    <>  꺾쇠 괄호
+    ()  괄호
+    #   샵
+    +   더하기 기호
+    -   빼기 기호
+    .   마침표
+    !   느낌표
+    |   파이프
+
+___
+
+## 12. HTML
+
+## 13. 확장 구문 링크
+<https://github.com/KuHyeonWoo/GFM-study/blob/main/README.md>
