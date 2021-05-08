@@ -107,3 +107,60 @@ ___
 >This is really***very***important text.
 
 ___
+
+## 5. 인용구
+단락 앞에 >를 추가하십시오
+
+    > Dorothy followed her through many of the beautiful rooms in her castle.
+
+출력 결과는 다음과 같습니다.
+
+> Dorothy followed her through many of the beautiful rooms in her castle.
+
+### 여러 단락이 있는 인용구
+인용구는 여러 단락을 포함 할 수 있습니다. 단락 사이의 빈 줄에 >를 추가합니다.
+
+    > Dorothy followed her through many of the beautiful rooms in her castle.
+    >
+    > The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+
+출력 결과는 다음과 같습니다.
+
+> Dorothy followed her through many of the beautiful rooms in her castle.
+>
+> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+
+### 중첩 인용구
+인용구는 중첩 될 수 있습니다. 중첩하려는 단락 앞에 >>를 추가하십시오.
+
+    > Dorothy followed her through many of the beautiful rooms in her castle.
+    >
+    >> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+    end
+
+출력 결과는 다음과 같습니다.
+
+> Dorothy followed her through many of the beautiful rooms in her castle.
+>
+>> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+
+### 다른 요소와 인용구
+인용구는 다른 마크 다운 형식의 요소를 포함 할 수 있습니다. 모든 요소를 ​​사용할 수 있는 것은 아닙니다. 어떤 요소가 작동하는지 확인하기 위해 실험해야합니다.
+
+    > #### The quarterly results look great!  
+    >  
+    > - Revenue was off the chart.  
+    > - Profits were higher than ever.  
+    >  
+    >  *Everything* is going according to **plan**.
+
+출력결과는 다음과 같습니다.
+
+> #### The quarterly results look great!  
+>  
+> - Revenue was off the chart.  
+> - Profits were higher than ever.  
+>  
+>  *Everything* is going according to **plan**.
+
+___
