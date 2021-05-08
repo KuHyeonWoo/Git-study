@@ -458,6 +458,15 @@ Markdown 문서에서 서식을 만드는데 사용되는 문자를  리터럴 �
 ___
 
 ## 12. HTML
+많은 Markdown 응용 프로그램은 Markdown 형식의 텍스트에서 HTML 태그를 사용할 수 있도록 지원합니다. 지원 여부가 확실하지 않은 경우 Markdown 응용 프로그램의 문서를 확인하십시오. 일부 응용 프로그램은 HTML 태그의 하위 집합만 지원합니다.
+
+    This **word** is bold. This <em>word</em> is italic.
+
+>This **word** is bold. This <em>word</em> is italic.
+
+\<div>, \<table>, \<pre>, 및 \<p>와 같은 블록 레벨 HTML 요소와 주변 내용을 구분하기 위해 빈 줄을 사용하십시오. 탭이나 공백으로 태그를 들여 쓰지 마십시오. 서식을 방해할 수 있습니다.
+
+블록 수준 HTML 태그 내에서는 Markdown 구문을 사용할 수 없습니다. 예를 들어, \<p>italic and \*\*bold**\</p> 은 작동하지 않습니다.
 
 ## 13. 확장 구문 링크
 <https://github.com/KuHyeonWoo/GFM-study/blob/main/README.md>
