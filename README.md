@@ -100,3 +100,24 @@ https://github.com/KuHyeonWoo/Git-study
 
 * git tag -a v1.4 -m "MESSAGE" 명령을 쓰면 현재 커밋에 메세지와 함께 태그를 붙일 수 있다.
 
+
+## 18. 명령어 표
+
+|명령어|사용여부|
+|---|---|
+|[add](#4-파일-추적하기---add)| O |
+|[branch](#11-브랜치-생성하기---branch)| O |
+|[checkout](#12-브랜치-이동하기---checkout)| O |
+|[clone](#10-기존-저장소를-복제하기---clone)| O |
+|[commit](#5-변경사항-커밋하기---commit)| O |
+|[config](#1.-Git-설정하기---config)| O |
+|[init](#2-기존-디렉토리를-git-저장소-만들기---init)| O |
+|[log](#6-커밋-히스토리-조회하기---log)| O |
+|[merge](#15-합병하기---merge)| O |
+|[pull](#14-리모트-저장소에서-변경사항-불러오기---pull)| O |
+|[push](#8-리모트-저장소에-push-공유하기---push)| O |
+|[rebase](#16-rebase)| O |
+|[remote](#7-리모트-저장소-추가히기---remote)| O |
+|[reset --hard](#13-커밋-지우고-이전으로-돌아가기---reset---hard)| O |
+|[status](#3-파일-상태-확인하기---status)| O |
+|[tag](#17-태그)| O |
