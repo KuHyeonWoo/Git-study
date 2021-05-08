@@ -171,6 +171,23 @@ ___
 ### 순서있는 목록
 숫자 뒤에 마침표가 있는 항목을 추가합니다. 숫자는 숫자 순서일 필요는 없지만 목록은 숫자 1로 시작해야합니다.
 
+    1. First item
+    2. Second item
+    8. Third item
+    4. Fourth item
+    
+>1. First item
+>2. Second item
+>3. Third item
+>4. Fourth item
+
+    1. First item
+    2. Second item
+    3. Third item
+        1. Indented item
+        2. Indented item
+    4. Fourth item
+
 ### 순서없는 목록
 항목 앞에 대시(-), 별표(*) 또는 더하기 기호(+)를 추가합니다. 중첩된 목록을 만들려면 하나 이상의 항목을 들여 씁니다.
 
