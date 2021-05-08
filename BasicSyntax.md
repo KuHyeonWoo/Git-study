@@ -164,3 +164,148 @@ ___
 >  *Everything* is going according to **plan**.
 
 ___
+
+## 6. 목록
+항목을 순서있는 또는 순서없는 목록으로 구성할 수 있습니다.
+
+### 순서있는 목록
+숫자 뒤에 마침표가 있는 항목을 추가합니다. 숫자는 숫자 순서일 필요는 없지만 목록은 숫자 1로 시작해야합니다.
+
+### 순서없는 목록
+항목 앞에 대시(-), 별표(*) 또는 더하기 기호(+)를 추가합니다. 중첩된 목록을 만들려면 하나 이상의 항목을 들여 씁니다.
+
+### 목록에 요소 추가
+목록의 연속성을 유지하면서 목록에 다른 요소를 추가하려면 다음 예와 같이 요소를 공백 4개 또는 탭 1개로 들여 쓰십시오.
+
+#### a. 단락
+    *   This is the first list item.
+    *   Here's the second list item.
+
+        I need to add another paragraph below the second list item.
+
+    *   And here's the third list item.
+
+>*   This is the first list item.
+>*   Here's the second list item.
+>
+>   I need to add another paragraph below the second list item.
+>
+>*   And here's the third list item.
+
+#### b. 인용구
+    *   This is the first list item.
+    *   Here's the second list item.
+
+        > A blockquote would look great below the second list item.
+
+    *   And here's the third list item.
+
+>*   This is the first list item.
+>*   Here's the second list item.
+>
+>    > A blockquote would look great below the second list item.
+>
+>*   And here's the third list item.
+
+#### c. 코드 블록
+코드 블록은 일반적으로 공백 4개 또는 탭 1개로 들여 쓰기됩니다. 목록에 있으면 공백 8개 또는 탭 2개를 들여 씁니다.
+
+    1.  Open the file.
+    2.  Find the following code block on line 21:
+
+            <html>
+              <head>
+                <title>Test</title>
+              </head>
+
+    3.  Update the title to match the name of your website.
+
+출력 결과는 다음과 같습니다.
+
+1.  Open the file.
+2.  Find the following code block on line 21:
+
+        <html>
+            <head>
+            <title>Test</title>
+            </head>
+
+3.  Update the title to match the name of your website.
+
+#### d. 이미지
+    1.  Open the file containing the Linux mascot.
+    2.  Marvel at its beauty.
+
+        ![Tux, the Linux mascot](/assets/images/tux.png)
+
+    3.  Close the file.
+
+>1.  Open the file containing the Linux mascot.
+>2.  Marvel at its beauty.
+>
+>    ![Tux, the Linux mascot](/assets/images/tux.png)
+>
+>3.  Close the file.
+
+#### e. 목록
+순서없는 목록을 순서있는 목록에 중첩하거나 그 반대로 할 수 있습니다.
+
+    1. First item
+    2. Second item
+    3. Third item
+        - Indented item
+        - Indented item
+    4. Fourth item
+
+>1. First item
+>2. Second item
+>3. Third item
+>    - Indented item
+>    - Indented item
+>4. Fourth item
+
+___
+
+## 7. 코드
+단어나 구를 코드로 표시하려면 백틱(\`)으로 묶습니다.
+
+    At the command prompt, type `nano`.
+
+
+>At the command prompt, type `nano`.
+
+### 백틱탈출
+코드로 표시하려는 단어나 구에 하나 이상의 백틱이 포함되어있는 경우 단어나 구를 이중 백틱(\``)으로 묶어 이스케이프 할 수 있습니다.
+
+    ``Use `code` in your Markdown file.``
+
+>``Use `code` in your Markdown file.``
+
+### 코드 블록
+코드 블록을 만들려면 블록의 모든 줄을 최소 4개의 공백 또는 1개의 탭으로 들여 쓰십시오.
+
+        <html>
+          <head>
+          </head>
+        </html>
+
+출력 결과는 다음과 같습니다.
+
+    <html>
+      <head>
+      </head>
+    </html>
+___
+
+## 8. 수평선
+수평선을 만들려면 3개 이상의 별표(***), 대시(---) 또는 밑줄(___)을 한 줄에 단독으로 사용하십시오. 호환성을 위해 수평선 앞뒤에 빈 줄을 넣으십시오.
+
+    ***
+
+    ---
+
+    ________
+
+세 가지 모두의 렌더링된 출력은 동일하게 보입니다.
+
+___
