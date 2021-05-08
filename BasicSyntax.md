@@ -423,6 +423,13 @@ URL 또는 이메일 주소를 링크로 빠르게 전환하려면 꺾쇠 괄호
 ___
 
 ## 10. 이미지
+이미지를 추가하려면 느낌표(!), 대괄호로 둘러싸인 대체 텍스트, 괄호로 둘러싸인 이미지의 경로 또는 URL을 추가합니다. 선택적으로 URL 뒤에 괄호로 둘러싸인 제목을 추가할 수 있습니다.
+
+    ![Philadelphia's Magic Gardens. This place was so cool!](/assets/images/philly-magic-gardens.jpg "Philadelphia's Magic Gardens")
+
+출력 결과는 다음과 같습니다.
+
+![Philadelphia's Magic Gardens. This place was so cool!](philly-magic-garden.jpg "Philadelphia's Magic Gardens")
 
 ### 이미지 연결
 이미지에 링크를 추가하려면 이미지의 마크다운을 대괄호로 묶은 다음 링크를 괄호로 추가합니다.
