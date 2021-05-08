@@ -174,6 +174,32 @@ ___
 ### 순서없는 목록
 항목 앞에 대시(-), 별표(*) 또는 더하기 기호(+)를 추가합니다. 중첩된 목록을 만들려면 하나 이상의 항목을 들여 씁니다.
 
+    * First item
+    * Second item
+    * Third item
+    * Fourth item
+    
+>* First item
+>* Second item
+>* Third item
+>* Fourth item
+
+    - First item
+    - Second item
+    - Third item
+        - Indented item
+        - Indented item
+    - Fourth item
+
+>- First item
+>- Second item
+>- Third item
+>    - Indented item
+>    - Indented item
+>- Fourth item
+
+
+
 ### 목록에 요소 추가
 목록의 연속성을 유지하면서 목록에 다른 요소를 추가하려면 다음 예와 같이 요소를 공백 4개 또는 탭 1개로 들여 쓰십시오.
 
